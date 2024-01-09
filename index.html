@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Product Card</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        .t-shirt {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn {
+            padding: 10px 110px;
+            display: flex;
+            margin: auto;
+            background-color: white;
+            border: 2px solid navy;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width:800px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+        }
+        /* @media screen and (min-width:481px), (max-width:780px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="t-shirt">
+            <img src="resource/1.png" alt="">
+            <h3>T-shirt -1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, molestiae?</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/2.png" alt="">
+            <h3>T-shirt -2</h3>
+            <p>Price: $200</p>
+            <p>Quo eligendi excepturi error dolore nostrum quidem ratione ipsa minima.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/3.png" alt="">
+            <h3>T-shirt -3</h3>
+            <p>Price: $300</p>
+            <p>Officiis sequi illo maxime fuga minus? Veritatis repudiandae earum itaque.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/4.png" alt="">
+            <h3>T-shirt -4</h3>
+            <p>Price: $400</p>
+            <p>Libero beatae unde suscipit, quibusdam iure animi natus sapiente blanditiis.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="t-shirt">
+            <img src="resource/1.png" alt="">
+            <h3>T-shirt -1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, molestiae?</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/2.png" alt="">
+            <h3>T-shirt -2</h3>
+            <p>Price: $200</p>
+            <p>Quo eligendi excepturi error dolore nostrum quidem ratione ipsa minima.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/3.png" alt="">
+            <h3>T-shirt -3</h3>
+            <p>Price: $300</p>
+            <p>Officiis sequi illo maxime fuga minus? Veritatis repudiandae earum itaque.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+        <div class="t-shirt">
+            <img src="resource/4.png" alt="">
+            <h3>T-shirt -4</h3>
+            <p>Price: $400</p>
+            <p>Libero beatae unde suscipit, quibusdam iure animi natus sapiente blanditiis.</p>
+            <button class="btn"><a href="#">QUICK VIEW</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
